@@ -28,11 +28,13 @@
         <div class="col-sm-12" id="header">
           <h1 class="text-center">Hit me!</h1>
         </div>
-        <div>
-        <div class="row">
-          <div class="col-sm-4 col-sm-offset-4">
+        <div class="row text-center">
           <audio id="audio1" src="oh.mp3"></audio>
             <a href="#" onClick="play()"><img src="clay3.gif" class="rotate img-responsive center-block"></a>
+        </div>
+        <div class="row text-center">
+          <div class="social-share">
+            <a href="https://twitter.com/home?status=The%20Unofficial%20Andrew%20Dice%20Clay%20OH!%20Machine%20theohmachine.com"><img src="twitter_logo_blue.png"></a>
           </div>
         </div>
       </div>
@@ -53,12 +55,13 @@
       }
     </script> 
     <script>
-      function is_touch_device(){
-        return !!('untouchstart' in window);
-      }
-      if(is_touch_device() === false){
-        $("img").removeClass("rotate");
-      }
+    //   function is_touch_device(){
+    //     return !!('untouchstart' in window);
+    //   }
+    //   if(is_touch_device() === false){
+    //     $("img").removeClass("rotate");
+    //     on
+    //   }
     </script> 
   </body>
 </html>
