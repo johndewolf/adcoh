@@ -10,6 +10,7 @@
     <!-- Latest compiled and minified CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/project.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
 
     <!-- Latest compiled and minified JavaScript -->
 
@@ -41,14 +42,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-  <script>
-            function play() {
-            var audio = document.getElementById('audio1');
-            if (audio.paused) {
-                audio.play();
-            }else{
-                audio.currentTime = 0
-            }
-        }</script>  
+    <script>
+      function play() {
+        var audio = document.getElementById('audio1');
+        if (audio.paused) {
+            audio.play();
+        }else{
+            audio.currentTime = 0
+        }
+      }
+    </script> 
+    <script>
+      function is_touch_device(){
+        return !!('untouchstart' in window);
+      }
+      if(is_touch_device() === false){
+        $("img").removeClass("rotate");
+      }
+    </script> 
   </body>
 </html>
