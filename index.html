@@ -41,11 +41,11 @@
       </div>
       <div class="row text-center">
         <audio id="audio1" src="oh.mp3"></audio>
-          <a href="#" onClick="play()" id="dice-man"><img src="clay3.gif" class="rotate img-responsive center-block"></a>
+          <a href="#" onClick="play()" onClick="ga('send', 'event', 'button', 'click', 'twitter'"><img src="clay3.gif" class="rotate img-responsive center-block"></a>
       </div>
       <div class="row text-center">
         <div class="social-share">
-          <a href="https://twitter.com/home?status=The%20Unofficial%20Andrew%20Dice%20Clay%20OH!%20Machine%20theohmachine.com" id="twitter-link"><img src="Twitter_logo_blue.png"></a>
+          <a href="https://twitter.com/home?status=The%20Unofficial%20Andrew%20Dice%20Clay%20OH!%20Machine%20theohmachine.com" onClick="ga('send', 'event', 'button', 'click', 'twitter'"><img src="Twitter_logo_blue.png"></a>
         </div>
       </div>
     </div>
@@ -65,14 +65,6 @@
         }
       }
     </script> 
-    <script>
-      $('#dice-man').on('click', function() {
-        ga('send', 'event', 'button', 'click', 'dice-man');
-      });
-      $('#twitter-link').on('click', function() 
-        ga('send', 'event', 'button', 'click', 'twitter');
-      });
-    </script>
     <script>
     //   function is_touch_device(){
     //     return !!('untouchstart' in window);
